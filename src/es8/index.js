@@ -27,7 +27,7 @@ console.log("food".padEnd(12, " -------"));
 
 const helloWorld = () => {
     return new Promise((resolve, reject) => {
-        if (false){
+        if (true){
             setTimeout(() => resolve("Hello World"), 3000);
         } else {            
             reject(new Error("Test Error"));

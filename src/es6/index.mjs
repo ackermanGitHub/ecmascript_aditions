@@ -60,13 +60,13 @@ console.log(a+4); // but can be edited when is called
 let guy = "Julio";
 let age = 19;
 // es5
-obj1 = {name: guy, age: age };
+obj1 = {name: "Julio", age: 19 };
 // es6
 obj2 = { guy, age};
 console.log(obj2);
 
 const names = [
-    {name: "Miguel", age: 19},
+    {name: "Morell", age: 19},
     {name: "Yumisisleidis", age: 20},
 ]
 let listOfNames = names.map(function (item){
