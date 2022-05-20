@@ -52,7 +52,7 @@ console.log(education);
     console.log(globalVar);
 }
 console.log(globalVar);
-console.log(globalLet); // This one give an error
+//console.log(globalLet); // This one give an error
 
 const a = 5; // cant´t be reasign
 console.log(a+4); // but can be edited when is called
@@ -83,7 +83,7 @@ console.log(square(3));
 // VER MAS TARDE ***IMPORTANTE***
 const helloPromise = () => {
     return new Promise((resolve, reject) => {
-        if(false){
+        if(true){
             resolve("Promess Accept");
         } else {
             reject("Promess Declined");
@@ -91,8 +91,9 @@ const helloPromise = () => {
     });
 }
 helloPromise()
-.then(response => console.log(response))
-.catch(error => console.log(error));
+    .then(response => console.log(response))
+    .then(() => console.log("hello"))
+    .catch(error => console.log(error));
 
 class Calculator {
     constructor(){
@@ -109,8 +110,8 @@ const calc = new Calculator();
 console.log(calc.sum(2,2));
 
 // Importar función desde otro fichero module
-import hello from './module.mjs';
-console.log(hello())
+//import hello from './module.mjs';
+//console.log(hello())
 
 // Generator Function
 function* helloWorld() {
@@ -122,10 +123,10 @@ function* helloWorld() {
     }
 }
 const genereitorHello = helloWorld();
-console.log(genereitorHello1.next().value);
-console.log(genereitorHello1.next().value);
-console.log(genereitorHello1.next().value);
 const genereitorHello1 = helloWorld();
+console.log(genereitorHello1.next().value);
+console.log(genereitorHello1.next().value);
+console.log(genereitorHello1.next().value);
 console.log(genereitorHello.next().value);
 console.log(genereitorHello.next().value);
 console.log(genereitorHello.next().value);
